@@ -12,6 +12,7 @@ The NPA constraints require us to compare all the POVM measurement operators tha
 
 **Compare.m** : Compares two operators. Returns 1 if operators are equal. 
 
+**
 
 
 
