@@ -1,4 +1,4 @@
-# device-independence-tripartite-q-systems
+# NPA Hierarchy
 Code written during summer research project at CQT, NUS on obtaining an entanglement witness to bipartite quantum sources. A major attempt in this project was to develop modifications of the NPA hierarchy that lead to good bounds on bipartite quantum sources. The code in this repo implements the original NPA heirarchy, for two or three parties. 
 
 The NPA hierarchy paper can be found [here]{https://iopscience.iop.org/article/10.1088/1367-2630/10/7/073013/meta} .
@@ -24,7 +24,7 @@ The NPA constraints require us to compare all the measurement operators that app
 
 **CHSH_3partycode.m** : Uses the NPA hierarchy to compute bounds on the maximum violation of the CHSH Inequality for two parties. 
 
-
+## Basic approach
 
 
 Our approach is the following : 
