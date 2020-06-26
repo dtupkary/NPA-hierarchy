@@ -9,6 +9,7 @@ The code uses Mosek ([link](https://www.mosek.com/)), and Yalmip ([link](https:/
 The NPA constraints require us to compare all the measurement operators that appear in the heirarchy. Therefore, each operator appearing in the hierarchy is labelled with multiple strings that define how it is constructed from the individual measurement projector operators. Its status also determines whether it is a null operator, identity operator, or otherwise. This is crucial, since it allows us to compare and manipulate these products of POVMs after taking into account their commutation relations and orthogonality properties. 
 
 Our approach is the following : 
+
 Step 1 : Generate all unique sequences of operators of the required order, say order L. This requires use of ProductOp, Reduce. Call the list S.
 
 Step 2 : Generate all unique sequences of operators of the order 2L. This allows us to have all operators that may appear in the Matrix M and some more. Call the list G.
