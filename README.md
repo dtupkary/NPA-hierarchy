@@ -26,12 +26,6 @@ Step 6 : Maximize the Bell expression which is a linear function of elements in 
 Additional constraints on the elements of M, translate to additional constraints between the elements of the sdpvar v defined earlier. We are set.
 
 
-THe code works for 
-1) CHSH for 2 party (Make C have one measurement and one outcome)
-2) Mermin for 3 party ([2,2],[2,2],[2,2],2)- Order 2
-3) Any bell expression for 2 or 3 parties. 
-
-
 ## Description of code 
 
 **Adjoint.m** :   Returns the Adjoint of the input operator.
@@ -53,5 +47,5 @@ THe code works for
 **CHSH_3partycode.m** : Uses the NPA hierarchy to compute bounds on the maximum violation of the CHSH Inequality for two parties. 
 
 ## Disclaimer 
-This repository was made more almost a year after the completion of this project. The code is not properly commented and might be difficult to understand. Please contact me in case you have any questions / suggesions. 
+This repository was made almost a year after the completion of this project. The code is not properly commented and might be difficult to understand. Please contact me in case you have any questions / suggesions. 
 
