@@ -3,7 +3,7 @@ Code written during summer research project at CQT, NUS on obtaining an entangle
 
 The code in this repository implements the original NPA heirarchy, for two and three parties. This implementation closely follows the implementation of the group at CQT. 
 The NPA hierarchy paper can be found [here](https://iopscience.iop.org/article/10.1088/1367-2630/10/7/073013/meta) .
-The code uses Mosek ([link](https://www.mosek.com/)), and Yalmip ([link](https://yalmip.github.io/)), both of which can be used freely by students. 
+The code is written in MATLAB and uses Mosek ([link](https://www.mosek.com/)), and Yalmip ([link](https://yalmip.github.io/)), both of which can be used freely by students. 
 
 ## Basic approach
 
