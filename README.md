@@ -1,6 +1,7 @@
 # NPA Hierarchy
-Code written during summer research project at CQT, NUS on obtaining an entanglement witness to bipartite quantum sources. A major attempt in this project was to develop modifications of the NPA hierarchy that lead to good bounds on bipartite quantum sources. The code in this repo implements the original NPA heirarchy, for two or three parties. 
+Code written during summer research project at CQT, NUS on obtaining an entanglement witness to bipartite quantum sources. A major attempt in this project was to develop modifications of the NPA hierarchy that lead to good bounds on certain Bell violations by bipartite quantum resources. 
 
+The code in this repository implements the original NPA heirarchy, for two and three parties. 
 The NPA hierarchy paper can be found [here](https://iopscience.iop.org/article/10.1088/1367-2630/10/7/073013/meta) .
 The code uses Mosek ([link](https://www.mosek.com/)), and Yalmip ([link](https://yalmip.github.io/)), both of which can be used freely by students. 
 
