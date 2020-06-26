@@ -12,7 +12,7 @@ The NPA constraints require us to compare all the POVM measurement operators tha
 
 **Compare.m** : Compares two operators. Returns 1 if operators are equal. 
 
-**
+**GenerateOps.m** : Generates the list of operators appearing in the NPA hierarchy. Takes as input 3 lists, A, B, C and one number L. L denotes the order to which the operators are to be generated (it is typically between 2 and 6). The lists specity the number of settings and outcomes for each party. That is, if A = \[4,4,2\] then A has choice of three settings, with the first and second setting having 4 outcomes each, and the third setting having 2 outcomes.  
 
 
 
