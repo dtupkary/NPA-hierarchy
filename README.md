@@ -10,10 +10,15 @@ The NPA constraints require us to compare all the measurement operators that app
 
 Our approach is the following : 
 Step 1 : Generate all unique sequences of operators of the required order, say order L. This requires use of ProductOp, Reduce. Call the list S.
+
 Step 2 : Generate all unique sequences of operators of the order 2L. This allows us to have all operators that may appear in the Matrix M and some more. Call the list G.
+
 Step 3 : Assign an index to each operator of order 2L. A natural way is to define the index to be the position at which a given operator appears in G.
+
 Step 4 : Generate an sdpvar for length = length of G. Call it v. This holds all the unique elements that can appear in M. 
+
 Step 5 : For i and j ranging from 1 to length(S), compute the (i,j) element of M. This requires use of adjoint. Find the index assigned to the element and write M(i,j)=indexof( the i,j th operator). Adding the M >=0 constraint completes all the NPA constraints.
+
 Step 6 : Maximize the Bell expression which is a linear function of elements in v, subject to v creating a positive semidefinite matrix M. 
 
 Additional constraints on the elements of M, translate to additional constraints between the elements of the sdpvar v defined earlier. We are set.
