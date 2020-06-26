@@ -12,11 +12,11 @@ Our approach is the following :
 
 Step 1 : Generate all unique sequences of operators of the required order, say order L. This requires use of ProductOp, Reduce. Call the list S.
 
-Step 2 : Generate all unique sequences of operators of the order 2L. This allows us to have all operators that may appear in the Matrix M and some more. Call the list G.
+Step 2 : Generate all unique sequences of operators of the order 2L. This allows us to have all operators that may appear in the NPA Matrix M and some more. Call the list G.
 
 Step 3 : Assign an index to each operator of order 2L. A natural way is to define the index to be the position at which a given operator appears in G.
 
-Step 4 : Generate an sdpvar for length = length of G. Call it v. This holds all the unique elements that can appear in M. 
+Step 4 : Generate an sdpvar for length = length of G. Call it v. This holds all the unique elements that can appear in the NPA matrix M. 
 
 Step 5 : For i and j ranging from 1 to length(S), compute the (i,j) element of M. This requires use of adjoint. Find the index assigned to the element and write M(i,j)=indexof( the i,j th operator). Adding the M >=0 constraint completes all the NPA constraints.
 
@@ -50,4 +50,7 @@ THe code works for
 **MerminCode.m**: Uses the NPA hierarchy to compute the maximum violation of the Mermin Inequality for three parties. Order of the hierarchy can be adjusted from within the code.
 
 **CHSH_3partycode.m** : Uses the NPA hierarchy to compute bounds on the maximum violation of the CHSH Inequality for two parties. 
+
+## Disclaimer 
+This repository was made more almost a year after the completion of this project. The code is not properly commented and might be difficult to understand. Please contact me in case you have any questions / suggesions. 
 
